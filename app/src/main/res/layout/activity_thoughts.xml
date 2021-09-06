@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">;
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ThoughtsActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="419dp"
+            android:layout_height="734dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_goneMarginLeft="100sp"
+            app:layout_goneMarginRight="100sp">
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45sp"
+            android:hint="Enter your name"
+            android:inputType="textCapWords"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+        />
+        //add same thing for title
+        //android:inputType="textMultiLine" /> /> eta use for multiline
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:hint="Enter Title"
+            android:inputType="textCapWords"
+            app:layout_constraintTop_toBottomOf="@+id/name_field" />
+
+        <EditText
+            android:id="@+id/writing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180sp"
+            android:hint="Please write here"
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="201dp"
+            android:layout_height="76dp"
+            android:text="Send Thoughts"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_goneMarginTop="350sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
